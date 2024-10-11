@@ -160,14 +160,14 @@ export default function FarcasterPage() {
 				<title>Privy Farcaster Demo</title>
 			</Head>
 
-			<main className='flex min-h-screen flex-col bg-privy-light-blue px-4 py-6 sm:px-20 sm:py-10'>
+			<main className='flex min-h-screen flex-col bg-primary px-4 py-6 sm:px-20 sm:py-10'>
 				<ToastContainer />
 				<div className='flex flex-row justify-between'>
-					<h1 className='text-2xl font-semibold'>Farcaster Demo</h1>
+					<h1 className='text-2xl font-semibold text-dark'>Farcaster Demo</h1>
 					<div className='flex flex-row gap-4'>
 						<button
 							onClick={logout}
-							className='rounded-md bg-violet-200 px-4 py-2 text-sm text-violet-700 hover:text-violet-900'
+							className='rounded-md bg-secondary px-4 py-2 text-sm text-white hover:bg-accent-1 hover:text-dark'
 						>
 							Logout
 						</button>
@@ -190,7 +190,7 @@ export default function FarcasterPage() {
 				<div className='flex flex-wrap gap-4'>
 					{!signerPublicKey && (
 						<button
-							className='mt-4 rounded-md bg-violet-600 px-4 py-2 text-sm text-white hover:bg-violet-700'
+							className='mt-4 rounded-md bg-secondary px-4 py-2 text-sm text-white hover:bg-accent-1 hover:text-dark'
 							onClick={requestFarcasterSignerFromWarpcast}
 							disabled={!!signerPublicKey}
 						>
@@ -210,7 +210,7 @@ export default function FarcasterPage() {
 						onChange={(e) => setCastInput(e.target.value)}
 					></input>
 					<button
-						className='rounded-md bg-violet-600 px-4 py-2 text-sm text-white hover:bg-violet-700'
+						className='rounded-md bg-secondary px-4 py-2 text-sm text-white hover:bg-accent-1 hover:text-dark'
 						onClick={async () => {
 							const { hash } = await hubClient.submitCast(
 								{
@@ -237,7 +237,7 @@ export default function FarcasterPage() {
 				</p>
 				<div className='flex flex-wrap gap-4'>
 					<button
-						className='rounded-md bg-violet-600 px-4 py-2 text-sm text-white hover:bg-violet-700'
+						className='rounded-md bg-secondary px-4 py-2 text-sm text-white hover:bg-accent-1 hover:text-dark'
 						onClick={async () => {
 							const { hash } = await hubClient.followUser(
 								188926,
@@ -251,7 +251,7 @@ export default function FarcasterPage() {
 						Follow
 					</button>
 					<button
-						className='rounded-md bg-violet-600 px-4 py-2 text-sm text-white hover:bg-violet-700'
+						className='rounded-md bg-secondary px-4 py-2 text-sm text-white hover:bg-accent-1 hover:text-dark'
 						onClick={async () => {
 							const { hash } = await hubClient.unfollowUser(
 								188926,
