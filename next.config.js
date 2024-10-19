@@ -12,4 +12,7 @@ module.exports = {
     };
     return config;
   },
+  env: {
+    NEXT_PUBLIC_NEYNAR_API_KEY: process.env.NEXT_PUBLIC_NEYNAR_API_KEY,
+  },
 };

@@ -11,6 +11,7 @@
 	},
 	"dependencies": {
 		"@heroicons/react": "^2.0.18",
+		"@neynar/nodejs-sdk": "^1.63.0",
 		"@privy-io/react-auth": "^1.64.0-beta-20240503221045",
 		"@solana/web3.js": "^1.95.3",
 		"@standard-crypto/farcaster-js": "^7.4.0",
